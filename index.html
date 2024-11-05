@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Sholihin Wiwi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide flex flex-col">
+    <header class="gradient-animate text-white text-center py-6 animate__animated animate__fadeIn">
+        <h1 class="text-3xl font-bold animate__animated animate__bounceInDown">Portfolio - Muhammad Sholihin Wiwi</h1>
+        <p class="text-lg animate__animated animate__fadeInUp">Program Studi: Ilmu Komputer (Ilkom) - Universitas Pertamina, Angkatan 2022</p>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">👋 Halo! Saya Muhammad Sholihin Wiwi, mahasiswa Ilmu Komputer. Selamat Datang!</p>
+    </header>
+
+    <main class="container mx-auto my-8 grid gap-8 p-4 md:grid-cols-2 lg:grid-cols-3">
+        <section id="about" class="card-hover bg-white rounded-lg shadow p-6 text-center animate__animated animate__fadeInUp animate__delay-1s hover:animate__pulse">
+            <h2 class="text-2xl font-semibold mb-4">HELLO SEMUA</h2>
+            <div class="profile-img-container flex justify-center mb-4">
+                <img src="Gambar WhatsApp 2024-10-29 pukul 09.19.15_e2426708.jpg" alt="Muhammad Sholihin Wiwi"
+                    class="w-32 h-32 rounded-full object-cover animate__animated animate__zoomIn">
+            </div>
+            <p class="animate__animated animate__fadeIn">I'm passionate about technology and music. Let's connect! 🔗</p>
+        </section>
+
+        <section id="skills" class="card-hover bg-white rounded-lg shadow p-6 animate__animated animate__fadeInUp animate__delay-1s hover:animate__pulse">
+            <h2 class="text-2xl font-semibold mb-4">Keahlian</h2>
+            <div class="space-y-4">
+                <div class="animate__animated animate__slideInLeft">
+                    <div class="flex justify-between mb-1">
+                        <span>Database</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="--skill-level: 85%"></div>
+                    </div>
+                </div>
+                <div class="animate__animated animate__slideInLeft animate__delay-1s">
+                    <div class="flex justify-between mb-1">
+                        <span>Networking</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-purple-600 h-2.5 rounded-full" style="--skill-level: 75%"></div>
+                    </div>
+                </div>
+                <div class="animate__animated animate__slideInLeft animate__delay-2s">
+                    <div class="flex justify-between mb-1">
+                        <span>Musik</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-indigo-600 h-2.5 rounded-full" style="--skill-level: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card-hover bg-white rounded-lg shadow p-6 col-span-full lg:col-span-2 animate__animated animate__fadeInUp animate__delay-1s">
+            <h2 class="text-2xl font-semibold mb-4">Hubungi Saya</h2>
+            <form id="contactForm" class="gradient-form p-6 rounded-lg space-y-4 animate__animated animate__fadeInLeft">
+                <div class="relative">
+                    <label for="name" class="block text-sm font-medium text-white">Nama:</label>
+                    <span id="nameError" class="text-red-500 text-sm hidden mb-1">Tolong isi nama Anda yah ❤️</span>
+                    <input type="text" id="name" name="name" class="input-animate w-full p-2 border rounded"
+                        placeholder="Masukkan nama Anda">
+                </div>
+
+                <div class="relative">
+                    <label for="email" class="block text-sm font-medium text-white">Email:</label>
+                    <span id="emailError" class="text-red-500 text-sm hidden mb-1">Tolong isi email yang valid yah ❤️</span>
+                    <input type="email" id="email" name="email" class="input-animate w-full p-2 border rounded"
+                        placeholder="email@hihihu.com">
+                </div>
+
+                <div class="relative">
+                    <label for="phone" class="block text-sm font-medium text-white">Nomor HP:</label>
+                    <span id="phoneError" class="text-red-500 text-sm hidden mb-1">Tolong isi nomor HP yang valid yah ❤️</span>
+                    <input type="tel" id="phone" name="phone" class="input-animate w-full p-2 border rounded"
+                        placeholder="08--">
+                </div>
+
+                <div class="relative">
+                    <label for="description" class="block text-sm font-medium text-white">Pesan:</label>
+                    <span id="descriptionError" class="text-red-500 text-sm hidden mb-1">Tolong isi pesan Anda yah ❤️</span>
+                    <textarea id="description" name="description" class="input-animate w-full p-2 border rounded"
+                        rows="4" placeholder="Tulis pesan Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn w-full p-3 rounded text-white font-semibold animate__animated animate__bounceIn">
+                    Kirim Pesan 📨
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="gradient-animate text-white text-center py-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <p>&copy; 2024 Muhammad Sholihin Wiwi | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+
+</html>
